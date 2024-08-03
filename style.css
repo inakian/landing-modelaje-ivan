@@ -1,0 +1,222 @@
+body {
+  font-family: "Arial", sans-serif;
+  color: #333;
+}
+.navbar {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  z-index: 1030;
+}
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.hero-columns {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  z-index: 1;
+}
+.hero-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.hero-image {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+.hero-image:hover {
+  opacity: 1;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+.about-me {
+  background-color: #f8f9fa;
+  padding: 5rem 0;
+}
+.experiences {
+  padding: 5rem 0;
+}
+.contact {
+  background-color: #343a40;
+  color: white;
+  padding: 5rem 0;
+}
+.card {
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  z-index: 1030;
+}
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.hero-columns {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  z-index: 1;
+}
+.hero-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.hero-image {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+.hero-image:hover {
+  opacity: 1;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+.about-me {
+  background-color: #f8f9fa;
+  padding: 5rem 0;
+}
+.experiences {
+  padding: 5rem 0;
+}
+.contact {
+  background-color: #343a40;
+  color: white;
+  padding: 5rem 0;
+}
+.card {
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+  .hero {
+    height: 70vh;
+  }
+  .hero-columns {
+    flex-wrap: wrap;
+  }
+  .hero-column {
+    flex: 50%;
+  }
+  .hero-image {
+    height: 35vh;
+  }
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .hero-content .lead {
+    font-size: 1rem;
+  }
+  .about-me,
+  .experiences,
+  .contact {
+    padding: 3rem 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    height: 60vh;
+  }
+  .hero-column {
+    flex: 100%;
+  }
+  .hero-image {
+    height: 30vh;
+  }
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .hero-content .lead {
+    font-size: 0.9rem;
+  }
+  .about-me,
+  .experiences,
+  .contact {
+    padding: 2rem 0;
+  }
+  .card {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Ajustes adicionales para mejorar la experiencia en dispositivos móviles */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+  .navbar-toggler {
+    font-size: 1rem;
+  }
+  .btn-lg {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+/* Ajuste para evitar que el contenido quede debajo del navbar fijo en móviles */
+body {
+  padding-top: 56px;
+}
+@media (min-width: 992px) {
+  body {
+    padding-top: 76px;
+  }
+}

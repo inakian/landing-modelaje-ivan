@@ -83,6 +83,8 @@ body {
   overflow: hidden;
   display: flex;
   align-items: center;
+  width: 100%;
+  overflow: hidden;
 }
 .hero-content {
   position: relative;
@@ -111,6 +113,9 @@ body {
   background-position: center;
   opacity: 0.7;
   transition: opacity 0.3s ease;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 .hero-image:hover {
   opacity: 1;
